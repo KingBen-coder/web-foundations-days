@@ -1,0 +1,178 @@
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f7f9;
+}
+
+/* Header */
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #1f2937;
+  color: white;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0 0 1rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background: white;
+  color: #1f2937;
+}
+
+/* Main content and cards */
+main {
+  width: calc(100% - 2rem);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+section {
+  background: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Responsive feature cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  padding: 1rem;
+  background: #eef2f7;
+  border-radius: 6px;
+}
+
+/* Shortcuts table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: #e5e7eb;
+}
+
+/* Feedback form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: #1f2937;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  header {
+    padding: 1.25rem 0.75rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: calc(100% - 1rem);
+    margin: 1rem auto;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
