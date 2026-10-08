@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>QuickNotes Draft Pad</title>
+  </head>
+  <body>
+    <header>
+      <h1>QuickNotes</h1>
+      <p>Capture ideas before they disappear.</p>
+      <button type="button" id="theme-toggle">Dark mode</button>
+    </header>
+
+    <main>
+      <section>
+        <h2>Write a note</h2>
+        <label for="note-text">Your note</label>
+        <textarea
+          id="note-text"
+          rows="8"
+          placeholder="Start typing. Your draft is saved automatically."
+        ></textarea>
+
+        <p id="char-count">0 / 200 characters</p>
+        <p id="word-count">0 words</p>
+
+        <button type="button" id="clear-btn">Clear</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+  </body>
+</html>
