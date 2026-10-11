@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="users.js" defer></script>
+    <title>User Directory</title>
+  </head>
+  <body>
+    <header>
+      <h1>User Directory</h1>
+      <p>Load users from an API and filter them by name.</p>
+    </header>
+
+    <main>
+      <section>
+        <button type="button" id="load-users">Load Users</button>
+
+        <p>
+          <label for="filter-input">Filter by name</label>
+          <input
+            type="text"
+            id="filter-input"
+            name="filter"
+            placeholder="Type a name..."
+          />
+        </p>
+
+        <p id="status" role="status" aria-live="polite"></p>
+        <ul id="users-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+  </body>
+</html>
